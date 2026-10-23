@@ -1,0 +1,86 @@
+:root {
+  color-scheme: light;
+}
+
+body {
+  display: block;
+  margin: 0;
+  background: #ffffff;
+  color: #222222;
+}
+
+.app {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.app h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 0 20px;
+  color: #222222;
+}
+
+.todo-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.todo-form input {
+  flex: 1;
+  padding: 8px;
+  background: #ffffff;
+  color: #222222;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+.app button {
+  padding: 8px 14px;
+  background: #1a73e8;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.app button:hover {
+  background: #1557b0;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.todo span {
+  flex: 1;
+  text-align: left;
+}
+
+.todo.done span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.count,
+.empty {
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+}
